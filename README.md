@@ -1,11 +1,11 @@
 
 # Evolutionary Optimization for Solving the N-Queens Problem
 
-This project investigates how evolutionary algorithms can be used to efficiently solve the N-Queens problem by exploring and evaluating a wide range of genetic operators, parameter configurations, and adaptive evolutionary strategies. The work was conducted as part of the Artificial Intelligence course at Jönköping University and is based on a comprehensive comparative study of algorithmic performance. :contentReference[oaicite:1]{index=1}
+This project investigates how evolutionary algorithms can be used to efficiently solve the N-Queens problem by exploring and evaluating a wide range of genetic operators, parameter configurations, and adaptive evolutionary strategies. The work was conducted as part of the Artificial Intelligence course at Jönköping University and is based on a comprehensive comparative study of algorithmic performance.
 
 ---
 
-## 📌 Overview
+## Overview
 
 The N-Queens problem requires placing N queens on an N×N chessboard such that none threaten each other. While small instances can be solved through brute force or backtracking, larger boards quickly become computationally expensive, making heuristic and population-based approaches ideal candidates.
 
@@ -18,14 +18,13 @@ This project applies a Genetic Algorithm (GA) to the reduced N! search space (on
 - Genocide-based stagnation recovery  
 - Sampling methods for parameter tuning  
 
-A total of **500 unique GA configurations** were evaluated, each tested over **100 randomized initial populations**, to identify the strongest operator combinations and parameter values. :contentReference[oaicite:2]{index=2}
-
+A total of **500 unique GA configurations** were evaluated, each tested over **100 randomized initial populations**, to identify the strongest operator combinations and parameter values.
 ---
 
-## 🧬 Core Concepts
+## Core Concepts
 
 ### **Genetic Representation**
-Boards are represented as permutations of length N, ensuring no row or column conflicts. Remaining conflicts (diagonal threats) are evaluated through a normalized fitness function. :contentReference[oaicite:3]{index=3}
+Boards are represented as permutations of length N, ensuring no row or column conflicts. Remaining conflicts (diagonal threats) are evaluated through a normalized fitness function.
 
 ### **Operators Evaluated**
 The project benchmarks a wide range of operators, including:
@@ -54,19 +53,19 @@ The project benchmarks a wide range of operators, including:
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 ### **1. PMX + Duplicate Removal was the strongest recombination strategy**  
 Consistently produced the shortest convergence times and lowest evaluation counts.
 
 ### **2. Duplicate Replacement excelled as a mutation strategy**  
-Particularly useful for restoring valid permutations and reducing horizontal conflicts. :contentReference[oaicite:4]{index=4}
+Particularly useful for restoring valid permutations and reducing horizontal conflicts.
 
 ### **3. Dynamic parameter schedules offered limited gains**  
 Adjusting mutation and recombination rates each generation did not meaningfully outperform static configurations.
 
 ### **4. Genocide significantly improved performance**  
-Replacing a fraction of the population upon stagnation prevented the search from getting trapped in local minima, especially for smaller N. :contentReference[oaicite:5]{index=5}
+Replacing a fraction of the population upon stagnation prevented the search from getting trapped in local minima, especially for smaller N. 
 
 ### **5. The enhanced GA vastly outperformed the baseline**  
 - **Up to 30% fewer evaluations**  
@@ -74,7 +73,7 @@ Replacing a fraction of the population upon stagnation prevented the search from
 
 ---
 
-## 🧪 Experimental Approach
+## Experimental Approach
 
 - Over **500 configurations** generated via Latin Hypercube Sampling  
 - Each configuration evaluated over **100 randomized initial populations**  
@@ -82,11 +81,11 @@ Replacing a fraction of the population upon stagnation prevented the search from
 - Performance measured using evaluation count, time per run, and convergence reliability  
 - Stochastic behaviours analyzed via visualization of operator distributions and sampling patterns  
 
-This thorough investigation yielded a well-balanced, robust evolutionary algorithm tuned specifically for the N-Queens problem. :contentReference[oaicite:6]{index=6}
+This thorough investigation yielded a well-balanced, robust evolutionary algorithm tuned specifically for the N-Queens problem.
 
 ---
 
-## 🚀 Final Outcome
+## Final Outcome
 
 The resulting evolutionary algorithm is:
 
@@ -185,7 +184,7 @@ You can visualize the logs directly by running the following command, Caution th
 python parts/visualise.py
 ```
 
-## 👥 Contributors
+## Contributors
 
 Mahmut Osmanovic  
 Isac Paulsson  
