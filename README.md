@@ -98,7 +98,7 @@ Its design incorporates the best-performing genetic operators and parameter choi
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 The report outlines several promising directions for continued research:  
 - Exploring additional genetic operators and hybrid strategies  
