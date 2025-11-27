@@ -7,7 +7,7 @@ This project investigates how evolutionary algorithms can be used to efficiently
 
 ## Overview
 
-The N-Queens problem requires placing N queens on an N×N chessboard such that none threaten each other. While small instances can be solved through brute force or backtracking, larger boards quickly become computationally expensive, making heuristic and population-based approaches ideal candidates.
+The N-Queens problem requires placing N queens on an NxN chessboard such that none threaten each other. While small instances can be solved through brute force or backtracking, larger boards quickly become computationally expensive, making heuristic and population-based approaches ideal candidates.
 
 This project applies a Genetic Algorithm (GA) to the reduced N! search space (one queen per column) and systematically explores:
 
