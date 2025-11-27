@@ -17,8 +17,8 @@ This project applies a Genetic Algorithm (GA) to the reduced N! search space (on
 - Survival-selection weighting  
 - Genocide-based stagnation recovery  
 - Sampling methods for parameter tuning  
-
-A total of **500 unique GA configurations** were evaluated, each tested over **100 randomized initial populations**, to identify the strongest operator combinations and parameter values.
+- A total of **500 unique GA configurations** were evaluated, each tested over **100 randomized initial populations**, to identify the strongest operator combinations and parameter values.
+  
 ---
 
 ## Core Concepts
